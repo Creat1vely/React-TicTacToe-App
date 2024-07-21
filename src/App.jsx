@@ -1,4 +1,7 @@
 import { useRef, useState } from "react"
+import CreativelyTitle from "./creatively-branding/CreativelyTitle";
+import CreativelyLinks from "./creatively-branding/CreativelyWebDevLinks";
+import "./creatively-branding/creatively.css"
 
 // tictactoe board data array
 let boardData = [
@@ -142,7 +145,7 @@ function App() {
   return (
     <div className='app'>
       {/* app's title */}
-      <h1 className="app-title">tic tac toe</h1>
+      <CreativelyTitle title="React TicTacToe App"/>
 
       {/* app's board component */}
       <div className="board">
@@ -166,6 +169,9 @@ function App() {
       <button className="reset-btn" onClick={ resetBoard }>
         reset game
       </button>
+
+      {/* creatively brand links */}
+      <CreativelyLinks/>
     </div>
   )
 }
